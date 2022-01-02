@@ -10,14 +10,22 @@
 		<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 		<title>Kautsar | Sarunk21</title>
 	</head>
-	<body class="bg-[#252525]">
+	<body class="bg-[#171717]">
+		<!-- Main Content -->
 		<div class="min-w-full" x-data="{open: false}">
+			<!-- Navbar -->
 			<div class="max-w-full px-8 lg:px-[185px] pt-8 z-50">
 				<div class="flex items-center justify-end">
 					<ul class="hidden md:flex space-x-8 font-semibold text-xl text-white">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#portofolio">Portofolio</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li class="hover:text-[#00A3FF] transition duration-150">
+							<a href="#home">Home</a>
+						</li>
+						<li class="hover:text-[#00A3FF] transition duration-150">
+							<a href="#portofolio">Portofolio</a>
+						</li>
+						<li class="hover:text-[#00A3FF] transition duration-150">
+							<a href="#contact">Contact</a>
+						</li>
 					</ul>
 					<div class="flex md:hidden">
 						<button x-show="open == false" @click="open = !open">
@@ -33,15 +41,22 @@
 				x-show="open"
 				x-transition:enter="animate__animated animate__fadeInDownBig"
 				x-transition:leave="animate__animated animate__fadeOutUpBig"
-				class="absolute block md:hidden px-8 py-3 z-50 right-8 bg-[#252525] mt-5"
+				class="absolute block md:hidden z-50 px-8 py-3 right-8 bg-[#252525] mt-5 border-2"
 			>
-				<ul class="flex flex-col space-y-4 justify-center items-end font-semibold text-xl">
-					<li class="text-white hover:text-[#00A3FF] transition duration-150 border-b-2"><a href="">Home</a></li>
-					<li class="text-white hover:text-[#00A3FF] transition duration-150 border-b-2"><a href="">Portofolio</a></li>
-					<li class="text-white hover:text-[#00A3FF] transition duration-150 border-b-2"><a href="">Contact</a></li>
+				<ul class="flex flex-col space-y-4 justify-center items-end font-semibold text-xl text-center">
+					<li class="text-white hover:text-[#00A3FF] transition duration-150">
+						<a href="#home">Home</a>
+					</li>
+					<li class="text-white hover:text-[#00A3FF] transition duration-150">
+						<a href="#portofolio">Portofolio</a>
+					</li>
+					<li class="text-white hover:text-[#00A3FF] transition duration-150">
+						<a href="#contact">Contact</a>
+					</li>
 				</ul>
 			</div>
-			<div class="lg:absolute top-0 max-w-full px-8 md:px-[185px] mt-5 md:mt-0 -z-50">
+			<!-- Jumbotron -->
+			<div class="max-w-full px-8 md:px-[185px] mt-5 md:mt-0 -z-50">
 				<div class="grid grid-cols-12">
 					<div class="col-span-12 md:col-span-5 relative">
 						<img src="/src/img/profile-pic.png" width="440" height="510" alt="Profile Picture" class="max-h-full w-full mx-auto" />
@@ -62,6 +77,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Portofolio -->
+			<div class="max-w-full px-8 md:px-[185px] mt-10 md:mt-20">
+				<div class="flex items-center space-x-2 opacity-25 text-white">
+					<span class="iconify" data-icon="akar-icons:minus" style="color: white" data-width="34" data-height="34"></span>
+					<h2 class="text-lg md:text-xl">PORTOFOLIO</h2>
+				</div>
+				<div class="grid grid-cols-12 gap-5 mt-5">
+					<div class="col-span-12 md:col-span-8 md:row-span-2">
+						<img src="/src/img/proj-1.png" alt="Project 1" class="w-full h-full" width="700" height="500" />
+					</div>
+					<div class="col-span-12 md:col-span-4 md:row-span-1">
+						<img src="/src/img/proj-2.png" alt="Project 2" class="w-full h-full" />
+					</div>
+					<div class="hidden md:block col-span-4 row-span-1">
+						<img src="/src/img/proj-3.png" alt="Project 3" />
+					</div>
+					<div class="hidden md:block col-span-4 row-span-1">
+						<img src="/src/img/proj-4.png" alt="Project 4" class="w-full h-full" />
+					</div>
+					<div class="hidden md:block col-span-4 row-span-1">
+						<img src="/src/img/proj-5.png" alt="Project 5" class="w-full h-full" />
+					</div>
+					<div class="col-span-12 md:col-span-4 md:row-span-1">
+						<img src="/src/img/more-proj.png" alt="More Project" class="w-full h-full" />
+					</div>
+				</div>
+			</div>
+			<!-- Know Me More -->
+			<div class="max-w-full px-8 md:px-[185px] my-10 md:my-32 flex flex-col justify-end md:space-x-4">
+				<p class="text-white text-2xl font-bold md:-mt-10">Know Me More</p>
+				<img src="/src/img/kmm-arrow.png" alt="Arrow Right" class="h-16 -mt-4 hidden md:flex" />
+				<div class="flex md:space-x-16 items-center justify-between px-8 md:px-24 py-5 md:py-8 bg-[#252525] mt-5 md:mt-0">
+					<span class="iconify" data-icon="akar-icons:instagram-fill" style="color: white" data-width="35" data-height="35"></span>
+					<span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+					<span class="iconify" data-icon="brandico:linkedin" style="color: white" data-width="35" data-height="35"></span>
+					<span class="iconify" data-icon="ant-design:youtube-outlined" style="color: white" data-width="35" data-height="35"></span>
+					<span class="iconify" data-icon="brandico:facebook" style="color: white" data-width="35" data-height="35"></span>
+				</div>
+			</div>
+			<!-- Expertise -->
+			<div class="max-w-full px-8 md:px-[185px]">
+				<div class="flex items-center space-x-2 opacity-25 text-white">
+					<span class="iconify" data-icon="akar-icons:minus" style="color: white" data-width="34" data-height="34"></span>
+					<h2 class="text-lg md:text-xl">PORTOFOLIO</h2>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div class="min-w-full my-10 px-8 md:px-[185px] text-white text-base md:text-2xl font-semibold">
+			<p>© 2021 — Design by Gilang Akbar & Develop by Kautsar panggawa</p>
 		</div>
 	</body>
 </html>
