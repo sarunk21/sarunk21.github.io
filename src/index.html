@@ -37,11 +37,12 @@
 					</div>
 				</div>
 			</div>
+			<!-- Navbar Mobile -->
 			<div
 				x-show="open"
 				x-transition:enter="animate__animated animate__fadeInDownBig"
 				x-transition:leave="animate__animated animate__fadeOutUpBig"
-				class="absolute block md:hidden z-50 px-8 py-3 right-8 bg-[#252525] mt-5 border-2"
+				class="absolute block md:hidden z-50 px-8 py-3 right-8 bg-[#252525] mt-5"
 			>
 				<ul class="flex flex-col space-y-4 justify-center items-end font-semibold text-xl text-center">
 					<li class="text-white hover:text-[#00A3FF] transition duration-150">
@@ -105,7 +106,7 @@
 				</div>
 			</div>
 			<!-- Know Me More -->
-			<div class="max-w-full px-8 md:px-[185px] my-10 md:my-32 flex flex-col justify-end md:space-x-4">
+			<div class="max-w-full px-8 md:px-[185px] my-10 md:my-32 flex flex-col md:flex-row justify-end md:space-x-4">
 				<p class="text-white text-2xl font-bold md:-mt-10">Know Me More</p>
 				<img src="/src/img/kmm-arrow.png" alt="Arrow Right" class="h-16 -mt-4 hidden md:flex" />
 				<div class="flex md:space-x-16 items-center justify-between px-8 md:px-24 py-5 md:py-8 bg-[#252525] mt-5 md:mt-0">
@@ -120,7 +121,36 @@
 			<div class="max-w-full px-8 md:px-[185px]">
 				<div class="flex items-center space-x-2 opacity-25 text-white">
 					<span class="iconify" data-icon="akar-icons:minus" style="color: white" data-width="34" data-height="34"></span>
-					<h2 class="text-lg md:text-xl">PORTOFOLIO</h2>
+					<h2 class="text-lg md:text-xl">Expertise</h2>
+				</div>
+				<div class="mt-5 grid grid-cols-12 gap-5">
+					<div class="col-span-12 md:col-span-4">
+						<div class="flex items-center justify-between px-8 py-8 bg-[#252525]">
+							<div class="">
+								<h1 class="font-semibold text-[#00A3FF]">Web Development</h1>
+								<p class="text-[11px] opacity-50 text-white">Build web Application And Interactive</p>
+							</div>
+							<span class="iconify" data-icon="entypo:code" style="color: #00a3ff" data-width="35" data-height="35"></span>
+						</div>
+					</div>
+					<div class="col-span-12 md:col-span-4">
+						<div class="flex items-center justify-between px-8 py-8 bg-[#252525]">
+							<div class="">
+								<h1 class="font-semibold text-[#00A3FF]">Web Design</h1>
+								<p class="text-[11px] opacity-50 text-white">create digital product with unique ideas</p>
+							</div>
+							<span class="iconify" data-icon="map:art-gallery" style="color: #00a3ff" data-width="35" data-height="35"></span>
+						</div>
+					</div>
+					<div class="col-span-12 md:col-span-4">
+						<div class="flex items-center justify-between px-8 py-8 bg-[#252525]">
+							<div class="">
+								<h1 class="font-semibold text-[#00A3FF]">Video Editor</h1>
+								<p class="text-[11px] opacity-50 text-white">Make Your Momennt More Memorable</p>
+							</div>
+							<span class="iconify" data-icon="bx:bxs-video" style="color: #00a3ff" data-width="35" data-height="35"></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
