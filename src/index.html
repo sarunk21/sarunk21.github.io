@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/dist/style.css" />
 		<script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<meta name="description" content="Web Portofolio, Art By Code, Front end developer" />
 		<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 		<title>Kautsar | Sarunk21</title>
 	</head>
@@ -28,10 +29,10 @@
 						</li>
 					</ul>
 					<div class="flex md:hidden">
-						<button x-show="open == false" @click="open = !open">
+						<button x-show="open == false" @click="open = !open" name="toggler">
 							<span class="iconify" data-icon="icon-park-outline:hamburger-button" style="color: white" data-width="32" data-height="32"></span>
 						</button>
-						<button x-show="open == true" @click="open = !open">
+						<button x-show="open == true" @click="open = !open" name="toggler">
 							<span class="iconify" data-icon="iconoir:cancel" style="color: white" data-width="32" data-height="32"></span>
 						</button>
 					</div>
@@ -72,7 +73,7 @@
 							I am a Software Engineer with experience during school and internship at Software Engineering Vocational School. looking for opportunities to improve my skills and experience
 						</p>
 						<div class="flex items-center mt-8 space-x-2">
-							<a href="" class="text-lg md:text-2xl font-bold text-[#00A3FF]">Lets Talk </a>
+							<a href="#contact" class="text-lg md:text-2xl font-bold text-[#00A3FF]">Lets Talk </a>
 							<span class="iconify" data-icon="grommet-icons:form-next-link" style="color: #00a3ff" data-width="34" data-height="34"></span>
 						</div>
 					</div>
@@ -110,11 +111,21 @@
 				<p class="text-white text-xl md:text-2xl font-bold md:-mt-10">Know Me More</p>
 				<img src="/src/img/kmm-arrow.png" alt="Arrow Right" class="h-16 -mt-4 hidden md:flex" />
 				<div class="flex md:space-x-16 items-center justify-between px-8 md:px-24 py-5 md:py-8 bg-[#252525] mt-5 md:mt-0">
-					<span class="iconify" data-icon="akar-icons:instagram-fill" style="color: white" data-width="35" data-height="35"></span>
-					<span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
-					<span class="iconify" data-icon="brandico:linkedin" style="color: white" data-width="35" data-height="35"></span>
-					<span class="iconify" data-icon="ant-design:youtube-outlined" style="color: white" data-width="35" data-height="35"></span>
-					<span class="iconify" data-icon="brandico:facebook" style="color: white" data-width="35" data-height="35"></span>
+					<a href="https://www.instagram.com/kautsar_r/" target="_blank">
+						<span class="iconify" data-icon="akar-icons:instagram-fill" style="color: white" data-width="35" data-height="35"></span>
+					</a>
+					<a href="https://github.com/sarunk21" target="_blank">
+						<span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+					</a>
+					<a href="https://gitlab.com/kautsar_r" target="_blank">
+						<span class="iconify" data-icon="ant-design:gitlab-filled" style="color: white" data-width="35" data-height="35"></span>
+					</a>
+					<a href="https://www.linkedin.com/in/kautsar-r/" target="_blank">
+						<span class="iconify" data-icon="brandico:linkedin" style="color: white" data-width="35" data-height="35"></span>
+					</a>
+					<a href="https://www.facebook.com/kautsar.mkp/" target="_blank">
+						<span class="iconify" data-icon="brandico:facebook" style="color: white" data-width="35" data-height="35"></span>
+					</a>
 				</div>
 			</div>
 			<!-- Expertise -->
@@ -175,10 +186,22 @@
 					</div>
 				</div>
 			</div>
+			<!-- Contact -->
+			<div class="max-w-full px-8 md:px-[185px] mt-10 md:mt-32 text-white" id="contact">
+				<div class="flex items-center space-x-2 opacity-25">
+					<span class="iconify" data-icon="akar-icons:minus" style="color: white" data-width="34" data-height="34"></span>
+					<h2 class="text-lg md:text-xl">CONTACT</h2>
+				</div>
+				<h1 class="text-2xl md:text-4xl mt-5 font-bold">HI! Interested in working with me?</h1>
+				<p class="text-base md:text-xl font-medium mt-5 flex items-center">
+					or, if you prefer to <a href="mailto:kautsarmkp@gmail.com" class="text-[#00A3FF] block ml-1"> Email me</a
+					><span class="iconify" data-icon="grommet-icons:form-next-link" style="color: #00a3ff" data-width="24" data-height="24"></span>
+				</p>
+			</div>
 		</div>
 		<!-- Footer -->
-		<div class="min-w-full my-10 px-8 md:px-[185px] text-white text-base md:text-2xl font-semibold">
-			<p>© 2021 — Design by Gilang Akbar & Develop by Kautsar panggawa</p>
+		<div class="min-w-full mb-10 mt-20 md:mt-32 px-8 md:px-[185px] text-white text-sm md:text-lg font-semibold opacity-50">
+			<p>© 2021 — Design by Gilang Akbar & Develop by Muhammad Kautsar Panggawa</p>
 		</div>
 	</body>
 </html>
